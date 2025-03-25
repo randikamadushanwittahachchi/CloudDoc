@@ -20,7 +20,7 @@ builder.Services.AddIdentity<User, IdentityRole>(option =>
     option.Password.RequireUppercase = false;
     option.Password.RequireNonAlphanumeric = false;
     option.Password.RequiredLength = 6;
-    option.SignIn.RequireConfirmedEmail = true;
+    option.SignIn.RequireConfirmedEmail = false;
     option.User.RequireUniqueEmail = true;
 })
     .AddEntityFrameworkStores<AppDbContext>()

@@ -235,3 +235,4 @@ C:\Randika\Project_App\CloudDoc\obj\Debug\net9.0\refint\CloudDoc.dll
 C:\Randika\Project_App\CloudDoc\obj\Debug\net9.0\CloudDoc.pdb
 C:\Randika\Project_App\CloudDoc\obj\Debug\net9.0\CloudDoc.genruntimeconfig.cache
 C:\Randika\Project_App\CloudDoc\obj\Debug\net9.0\ref\CloudDoc.dll
+C:\Randika\Project_App\CloudDoc\obj\Debug\net9.0\CloudDoc.sourcelink.json

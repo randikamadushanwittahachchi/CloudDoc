@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudDoc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+516d2435ae18a61fb3528ab5e16eef22badf13e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faaa9e6f23444fd7e6e20b537f4196fa9b8fb31c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudDoc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudDoc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

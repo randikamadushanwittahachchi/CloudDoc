@@ -2,12 +2,12 @@
 
 namespace CloudDoc.ViewModels
 {
-    public class UserViewModel
+    public class UserLogInViewModel
     {
-        [Required(ErrorMessage="User Email Is Required")]
-        [Display(Name = "User Email")]
+        [Required(ErrorMessage="User Name Is Required")]
+        [Display(Name = "User Name")]
         [DataType(DataType.EmailAddress)]
-        public string Email { get; set; } = null!;
+        public string UserName { get; set; } = null!;
 
 
         [Required(ErrorMessage = "Password Is Required")]
