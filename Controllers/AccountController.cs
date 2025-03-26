@@ -7,9 +7,9 @@ namespace CloudDoc.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly SignInManager<User> _signInManager;
-        private readonly UserManager<User> _userManager;
-        public AccountController(SignInManager<User> singIngManager,UserManager<User> userManager)
+        private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
+        public AccountController(SignInManager<AppUser> singIngManager,UserManager<AppUser> userManager)
         {
             _signInManager = singIngManager;
             _userManager = userManager;
@@ -44,7 +44,7 @@ namespace CloudDoc.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new User
+                var user = new AppUser
                 {
                     UserName = userViewModel.Email,
                     Email = userViewModel.Email,

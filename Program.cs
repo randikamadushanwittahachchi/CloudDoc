@@ -1,5 +1,6 @@
 using CloudDoc.Data;
 using CloudDoc.Models;
+using CloudDoc.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -9,11 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddTransient<IDocumentService, DocumentService>();
+
 //Add DbContext and Identity
 builder.Services.AddDbContext<AppDbContext>(
     option=>option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddIdentity<User, IdentityRole>(option =>
+builder.Services.AddIdentity<AppUser, IdentityRole>(option =>
 {
     option.Password.RequireDigit = false;
     option.Password.RequireLowercase = false;
